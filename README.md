@@ -1,36 +1,42 @@
-# 🧠 Emotion Reflection Tool
+# Emotion Reflection Tool
 
-A simple web application where users can reflect on their emotions in a sentence and receive a mock "emotion analysis" from a backend API.
+A web application that analyzes text emotions with visual results. Users enter their feelings and receive an emotion analysis with corresponding images.
 
----
+## Features
+- Emotion analysis with visual feedback
+- Mobile-responsive design
+- Loading states and error handling
+- Confidence visualization
+- Emotion-specific images
 
-## 📦 Tech Stack
+## Technologies
+- **Frontend**: Next.js, TypeScript, CSS Modules
+- **Backend**: Python, FastAPI
+- **API Integration**: RESTful communication
 
-- **Frontend:** Next.js (TypeScript, TailwindCSS)
-- **Backend:** FastAPI (Python)
-- **API Response:** Mocked emotion and confidence score
+## System Requirements
+- Node.js v16+
+- Python 3.8+
+- npm
 
----
+## Setup Instructions
 
-## 🚀 Features
-
-- Mobile-first, clean UI/UX
-- Input form for reflections
-- Loading + error states
-- API integration with mock emotion output
-
----
-
-## 🛠️ Local Setup Instructions
-
-### 📁 1. Clone the Repository
-
-## Backend Setup (FastAPI)
-git clone https://github.com/yourusername/emotion-reflection-tool.git
-cd emotion-reflection-tool
+### 1. Backend Setup (Python API)
+```bash
+# Navigate to backend directory
 cd backend
-python -m venv venv         # Create virtual environment (optional)
-source venv/bin/activate    # Activate on macOS/Linux
-venv\Scripts\activate       # Activate on Windows
 
-pip install fastapi uvicorn
+# Create virtual environment
+python -m venv venv
+
+# Activate environment
+# Linux/macOS:
+source venv/bin/activate
+# Windows:
+.\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run backend server
+uvicorn main:app --reload --port 8000
