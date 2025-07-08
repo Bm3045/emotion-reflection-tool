@@ -40,3 +40,14 @@ pip install -r requirements.txt
 
 # Run backend server
 uvicorn main:app --reload --port 8000
+
+## Frontend Setup (Next.js App)
+
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
